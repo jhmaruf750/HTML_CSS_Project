@@ -1,0 +1,149 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fa;
+    color: #333;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem;
+  }
+  
+  /* Header */
+  .header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Intro Section */
+  .intro {
+    text-align: center;
+    padding: 3rem 0;
+    background: #fff;
+  }
+  
+  .profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 6px solid #2a5298;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+  
+  /* Timeline */
+  .timeline {
+    background: #e9eff5;
+    padding: 2rem 0;
+  }
+  
+  .timeline h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .timeline ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .timeline ul li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border-left: 6px solid #2a5298;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Skills Section */
+  .skills {
+    padding: 3rem 0;
+    background: #fff;
+  }
+  
+  .skills h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+  
+  .skill-card {
+    background: #2a5298;
+    color: #fff;
+    padding: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    background: #1e3c72;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background: #f0f3f7;
+    padding: 3rem 0;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  .contact p {
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+  }
+  
+  .contact a {
+    color: #2a5298;
+    text-decoration: none;
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #2a5298;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+  }
+  

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      height: 100vh;
+      background: #3498db;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      background-image: url('https://via.placeholder.com/1500');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .coming-soon-container {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 600px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .coming-soon-container h1 {
+      font-size: 4rem;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    .coming-soon-container p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .countdown {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .email-signup {
+      margin-top: 20px;
+    }
+
+    .email-signup input[type="email"] {
+      padding: 10px;
+      width: 80%;
+      border-radius: 8px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    .email-signup button {
+      padding: 10px 20px;
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .email-signup button:hover {
+      background-color: #c0392b;
+    }
+
+    .footer-text {
+      margin-top: 30px;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="coming-soon-container">
+    <h1>Coming Soon</h1>
+    <p>Our website is under construction, but we'll be live very soon!</p>
+    <div class="countdown">
+      <p>Countdown: <span id="countdown-timer">10:00</span></p>
+    </div>
+
+    <div class="email-signup">
+      <p>Sign up to be notified when we launch:</p>
+      <input type="email" placeholder="Enter your email">
+      <button>Notify Me</button>
+    </div>
+
+    <p class="footer-text">© 2025 <strong>JH MaRuF</strong>. All rights reserved.</p>
+  </div>
+
+  <script>
+    let countdown = 600; // 10 minutes in seconds
+    let timerElement = document.getElementById('countdown-timer');
+
+    function startCountdown() {
+      setInterval(function () {
+        let minutes = Math.floor(countdown / 60);
+        let seconds = countdown % 60;
+        timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        countdown--;
+        if (countdown < 0) {
+          clearInterval();
+          timerElement.textContent = '00:00';
+        }
+      }, 1000);
+    }
+
+    startCountdown();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Create Your Resume</h1>
+        <p>Fill in the details below, and your interactive resume will be generated instantly.</p>
+    </header>
+
+    <section id="form-section">
+        <div class="container">
+            <form id="resume-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Short Bio</label>
+                    <textarea id="bio" placeholder="Write a short bio" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <input type="text" id="skills" placeholder="Enter your skills (comma separated)" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Experience</label>
+                    <textarea id="experience" placeholder="Enter your work experience" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="education">Education</label>
+                    <textarea id="education" placeholder="Enter your educational background" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="projects">Projects</label>
+                    <textarea id="projects" placeholder="Enter your projects" required></textarea>
+                </div>
+
+                <button type="submit">Generate Resume</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="resume-section">
+        <div class="container">
+            <div id="resume-output">
+                <h2>Generated Resume</h2>
+                <div id="resume">
+                    <h3 id="resume-name">JH MaRuF</h3>
+                    <p id="resume-bio">A passionate web developer with 3+ years of experience in building dynamic websites.</p>
+
+                    <h4>Skills</h4>
+                    <p id="resume-skills">HTML, CSS, JavaScript, React, Node.js</p>
+
+                    <h4>Experience</h4>
+                    <p id="resume-experience">Front-End Developer at XYZ Tech (2025 - Present)</p>
+
+                    <h4>Education</h4>
+                    <p id="resume-education">BSC in Computer Science, RUET (2023 - 2027)</p>
+
+                    <h4>Projects</h4>
+                    <p id="resume-projects">Online Portfolio Website, E-Commerce Website</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 JH MaRuF | Web Developer</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

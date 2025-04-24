@@ -1,0 +1,122 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    font-size: 1.1em;
+}
+
+/* Header */
+.hero {
+    background-image: url('spaghetti-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
+}
+
+.hero-title {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.hero-description {
+    font-size: 1.4em;
+    margin-top: 20px;
+    font-weight: 400;
+    color: #f1c40f;
+}
+
+/* Recipe Section */
+.recipe {
+    padding: 60px 20px;
+}
+
+.recipe-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.recipe-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.recipe-image img:hover {
+    transform: scale(1.05);
+}
+
+.recipe-details {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.recipe-details:hover {
+    transform: translateY(-10px);
+}
+
+.recipe-details h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.ingredient-list {
+    margin-bottom: 30px;
+}
+
+.ingredient-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.ingredient-icon {
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.steps {
+    font-size: 1.1em;
+}
+
+.steps ol {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.steps ol li {
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+
+.footer p {
+    font-size: 1em;
+}
